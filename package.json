@@ -1,0 +1,31 @@
+{
+    "name": "site",
+    "private": true,
+    "description": "The hacksi.me website",
+    "author": "Dav Glass <davglass@gmail.com>",
+    "version": "0.0.0",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "grunt": "~0.4.0",
+        "yui-lint": "~0.1.1",
+        "jshint": "~0.9.0",
+        "selleck": "*",
+        "istanbul": "~0.1.8",
+        "vows": "*" 
+    },
+    "scripts": {
+        "pretest": "jshint --config ./node_modules/yui-lint/jshint.json ./lib/",
+        "test": "istanbul cover --print both vows -- --spec ./tests/*.js"
+    },
+    "licenses":[
+        {
+            "type" : "MIT",
+            "url" : "https://github.com/hacksi/site/blob/master/LICENSE"
+        }
+    ],
+    "repository": {
+        "type":"git",
+        "url":"http://github.com/hacksi/site.git"
+    }
+}
