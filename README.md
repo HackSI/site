@@ -20,4 +20,4 @@ Testing & Linting
 Build Status
 ------------
 
-[![Build Status](https://travis-ci.org/hacksi/site.png?branch=master)](https://travis-ci.org/hacksi/site)
+[![Build Status](https://travis-ci.org/HackSI/site.png?branch=master)](https://travis-ci.org/HackSI/site)
