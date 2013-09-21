@@ -35,7 +35,4 @@ app.get('*', function(req, res) {
 });
 
 
-app.listen(8900);
-console.log('Server started http://127.0.0.1:8900/');
-
 module.exports = app;
