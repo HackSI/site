@@ -5,7 +5,7 @@ var express = require('express'),
 
 helmet.defaults(app);
 
-app.use(express.static('./static'));
+app.use(express['static']('./static'));
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');

@@ -47,17 +47,6 @@ var tests = {
                     assert.equal(200, topic.statusCode);
                 }
             },
-            '/rsvp': {
-                topic: function() {
-                    var self = this;
-                    fetch('/rsvp', function(err, res) {
-                        self.callback(err, res);
-                    });
-                },
-                'answer with a 200': function(topic) {
-                    assert.equal(200, topic.statusCode);
-                }
-            },
             '/register': {
                 topic: function() {
                     var self = this;
