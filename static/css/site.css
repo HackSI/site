@@ -3,6 +3,7 @@
  * Most of these are inherited from Base, but I want to change a few.
  */
 body {
+    background-color: #DEE7F0;
     color: #526066;
 }
 
@@ -10,6 +11,10 @@ h2, h3 {
     letter-spacing: 0.25em;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.pure-menu.pure-menu-open {
+    background-color: #DEE7F0;
 }
 
 p {
@@ -25,7 +30,8 @@ p {
 }
 
 .l-box {
-    padding: 0.5em 2em;
+    padding: 0.5em 2em 0.5em 2em;
+    margin: 0.5em 0 0 0;
 }
 
 /*
@@ -46,23 +52,29 @@ p {
 .banner {
     text-align: center;
     background-size: cover;
-    height: 350px;
+    height: 280px;
     width: 100%;
     margin-bottom: 3em;
     display: table;
-    background-color: black;
-    text-transform: uppercase;
+    background-color: #062440;
     color: white;
 }
 
 .banner-head {
-    display: table-cell;
+    width: 60%;
     vertical-align: middle;
     margin-bottom: 0;
+    margin: auto auto;
+    margin-top: 3em;
+}
+
+.banner-head a {
+    color: white;
 }
 
 .banner-head h1 {
-    font-size: 4em;
+    text-transform: uppercase;
+    font-size: 2em;
     font-weight: 500;
     text-shadow: 0 1px 1px black;
 }
@@ -90,7 +102,9 @@ p {
 .pricing-table {
     border: 1px solid #ddd;
     margin: 0 0.5em;
-    padding: 0 0 3em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 /*
@@ -98,11 +112,11 @@ p {
  * Choose a different color based on the type of pricing table.
  */
 .pricing-table-free .pricing-table-header {
-    background: #519251;
+    background: black;
 }
 
 .pricing-table-biz .pricing-table-header {
-    background: #2c4985;
+    background: #CD3B48;
 }
 
 /*
@@ -110,15 +124,20 @@ p {
  * By default, a header is black/white, and has some styles for its <h2> name.
  */
 .pricing-table-header {
-    background: #111;
+    background: #062440;
     color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
     .pricing-table-header h2 {
         margin: 0;
-        padding-top: 2em;
-        font-size: 4em;
-        font-weight: normal;
-
+        padding-top: .5em;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .pricing-table-header p {
+        padding: .5em;
     }
 
 
@@ -128,7 +147,10 @@ p {
  */
 .pricing-table-price {
     font-size: 1em;
-    margin: 0.2em 0 0;
+    display: block;
+    text-align: center;
+    margin: 0.2em 0 1.2em 0;
+    padding-bottom: 0.4em;
     font-weight: 100;
 }
     .pricing-table-price span {
@@ -187,9 +209,9 @@ p {
 }
 
 .footer {
-    background: black;
+    background: #062440;
     color: #888;
-    text-align: center;
+    text-align: left;
 }
     .footer a {
         color: #ddd;
@@ -205,7 +227,7 @@ p {
 @media(max-width: 767px) {
 
     .banner-head {
-        font-size: 3em;
+        font-size: 2em;
     }
     .pricing-table {
         margin-bottom: 2em;
@@ -222,6 +244,28 @@ p {
         height: 200px;
     }
     .banner-head {
-        font-size: 2em;
+        font-size: 1em;
     }
+}
+
+
+/*
+HACK SI
+*/
+
+h2.title {
+    text-align: center;
+}
+
+.sponsors {
+    width: 80%;
+    margin: auto auto;
+}
+
+.pure-button {
+    background-color: #CD3B48;
+}
+
+.content {
+    margin: 1em;
 }

@@ -14,17 +14,26 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
-app.get('/rsvp', function (req, res) {
-    res.render('home');
+app.get('/register', function (req, res) {
+    res.redirect('http://hacksi.eventbrite.com/');
+});
+
+app.get('/twitter', function (req, res) {
+    res.redirect('http://twitter.com/hacksi');
 });
 
 app.get('/about', function (req, res) {
-    res.render('home');
+    res.render('about');
 });
 
-app.get('/register', function (req, res) {
-    res.render('home');
+app.get('/sponsors', function (req, res) {
+    res.render('sponsors');
 });
+
+app.get('*', function(req, res) {
+    res.send(404, 'Not Found');
+});
+
 
 app.listen(8900);
 console.log('Server started http://127.0.0.1:8900/');
