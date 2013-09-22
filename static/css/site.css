@@ -79,7 +79,7 @@ a:hover {
 }
 
 .banner-head {
-    width: 60%;
+    _width: 60%;
 	max-width:960px;
     vertical-align: middle;
     margin-bottom: 0;
@@ -93,11 +93,11 @@ a:hover {
 }
 
 .banner-head h1 {
-    font-size: 4.8em;
+    font-size: 3.5em;
     font-weight: 500;
     text-shadow: 0 1px 1px black;
 	line-height:1;
-	text-align:left;
+	text-align:center;
 	text-transform:uppercase;
 	margin:.4em 0 .2em 0;
 }
@@ -109,7 +109,7 @@ a:hover {
 
 .banner-head .date {
 	font-family: 'open_sansbold';
-	font-size: 1.55em;
+	font-size: 1.25em;
 	font-variant: small-caps;}
 	
 .banner-head .location {
