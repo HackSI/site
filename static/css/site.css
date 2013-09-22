@@ -305,3 +305,7 @@ h2.title {
     padding: 0;
     border: 0;
 }
+
+.second h2 {
+    font-size: 1em;
+}
