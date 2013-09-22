@@ -30,6 +30,10 @@ app.get('/sponsors', function (req, res) {
     res.render('sponsors');
 });
 
+app.get('/contact', function (req, res) {
+    res.render('contact');
+});
+
 app.get('*', function(req, res) {
     res.send(404, 'Not Found');
 });

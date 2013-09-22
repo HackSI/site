@@ -21,6 +21,21 @@ p {
     line-height: 1.6em;
 }
 
+a {
+    color: #CD3B48;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.pure-menu li a:hover, .pure-menu li a:focus {
+    background-color: #062440;
+    color: #DEE7F0;
+}
+.pure-menu.pure-menu-open.pure-menu-fixed {
+    border-bottom: 0px;
+}
 
 /*
  * -- Layout Styles --
@@ -209,9 +224,9 @@ p {
 }
 
 .footer {
+    padding: 0.5em 2em 0.5em;
     background: #062440;
     color: #888;
-    text-align: left;
 }
     .footer a {
         color: #ddd;
@@ -268,4 +283,25 @@ h2.title {
 
 .content {
     margin: 1em;
+}
+
+.social {
+    text-align: right;
+}
+
+.social a {
+    text-decoration: none;
+}
+.social a:hover: {
+    color: #CD3B48;
+}
+.social a span {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
 }
