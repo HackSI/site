@@ -79,7 +79,6 @@ a:hover {
 }
 
 .banner-head {
-    _width: 60%;
 	max-width:960px;
     vertical-align: middle;
     margin-bottom: 0;
@@ -94,10 +93,12 @@ a:hover {
 
 .banner-head h1 {
     font-size: 3.5em;
+	font-size:72px;
     font-weight: 500;
     text-shadow: 0 1px 1px black;
 	line-height:1;
 	text-align:center;
+	text-align:left;
 	text-transform:uppercase;
 	margin:.4em 0 .2em 0;
 }
@@ -109,7 +110,7 @@ a:hover {
 
 .banner-head .date {
 	font-family: 'open_sansbold';
-	font-size: 1.25em;
+	font-size: 1.5em;
 	font-variant: small-caps;}
 	
 .banner-head .location {
@@ -125,13 +126,13 @@ a:hover {
 	border-radius:5px;}
 	
 .banner-head .registerPointer{
-	background: url("../img/registerPointer.png") no-repeat scroll center center transparent;
+	background: url("../img/registerPointer.png") no-repeat scroll right center transparent;
     display: block;
     height: 102px;
-    margin: 11.5em 0 0 58.5em;
+    margin: 175px 0 0 0;
     position: absolute;
     top: 0;
-    width: 36px;}
+    width: 970px;}
 
 /*
  * -- PRICING TABLE WRAPPER --
@@ -276,15 +277,132 @@ a:hover {
  * On tablets, we want to slightly adjust the size of the banner
  * text and add some vertical space between the various pricing tables
  */
-@media(max-width: 767px) {
+@media(max-width: 1048px) {
+
+	.banner-head {
+		max-width:750px;}
+		
+	.pure-u-1-5 {
+		width:25%;}
+		
+	.pure-u-4-5 {
+		width:75%;}
+
+	.banner-head h1 {
+		font-size: 56px;
+		margin-top:8px;
+		text-align:center;}
+		
+	.pure-u-1-2 {
+		width:90%;}
+		
+	.banner-head .date-loc {
+		margin-top: 15px;
+		margin-left:70px;}
+		
+	.banner-head .pure-button{
+		width:65%;
+		margin:20px 11px 0;
+		padding:14px 106px;}
+		
+    .pricing-table {
+        margin-bottom: 2em;}
+	
+	.banner-head .date {
+		font-size: 1.75em;}
+
+	.banner-head .location {
+		font-size: 1em;}
+	
+	.banner-head .registerPointer{
+		width:775px;
+		margin-top:212px;}
+
+}
+/*
+ * -- LARGE PHONES AND TABLET MEDIA QUERIES --
+ */
+@media(max-width: 799px) {
 
     .banner-head {
-        font-size: 2em;
-    }
-    .pricing-table {
-        margin-bottom: 2em;
-    }
+		max-width:90%;
+		padding:150px 0 40px 0;}
+		
+	.pure-u-1-5 {
+		width:35%;}
+			
+	.pure-u-1-5 img{
+		float:right;
+		margin-right:20px;}
+		
+	.pure-u-4-5 {
+		width:65%;}
 
+	.banner-head h1 {
+		font-size: 4em;
+		position:absolute;
+		width:100%;
+		left:0;
+		top:55px;
+		margin-top:8px;
+		text-align:center;}
+		
+	.pure-u-1-2 {
+		_width:90%;}
+		
+	.banner-head .date-loc {
+		font-size:1.3em;
+		line-height:1;
+		margin-top: 35px;
+		margin-left:25px;
+		background-size:50px;
+		padding-left:65px}
+		
+	.banner-head .location{
+		margin-top:15px;
+		display:table;}
+		
+	.banner-head .pure-button{
+		width:76%;
+		margin:20px 15px 0;
+		padding:20px 30px;}
+		
+    .pricing-table {
+        margin-bottom: 2em;}
+	
+	.banner-head .date {
+		font-size: 1.75em;}
+
+	.banner-head .location {
+		font-size: 1em;}
+	
+	.banner-head .registerPointer{
+		width:100%;
+		margin-top:212px;}
+
+}
+
+@media(max-width: 640px) {
+	.banner-head h1 {
+		font-size: 3.5em;
+		margin-top:20px;}
+		
+	.banner-head .date-loc {
+		font-size:1em;
+		padding-left:45px;
+		background-size:35px;}
+}
+
+@media(max-width: 580px) {
+	.banner-head h1 {
+		font-size: 3em;
+		margin-top:35px;}
+}
+
+@media(max-width: 550px) {
+	.banner-head h1 {
+		font-size: 2.5em;
+		margin-top:50px;}
 }
 
 /*
@@ -292,12 +410,39 @@ a:hover {
  * On phones, we want to reduce the height and font-size of the banner further
  */
 @media (max-width: 480px) {
+	.pure-u-1-5 {
+		width:100%;
+		text-align:center;}
+		
+	.pure-u-1-5 img {
+		float:none;
+		margin:0 auto;}
+	
+	.pure-u-4-5 {
+		width:100%;}
+		
     .banner {
         height: 200px;
     }
     .banner-head {
         font-size: 1em;
     }
+	.banner-head h1 {
+		font-size: 2.25em;
+		margin-top:60px;}
+		
+	.pure-u-1-2 {
+		margin:auto;
+		width:100%;
+		text-align:center;}
+	
+	.banner-head .date-loc {
+		width:80%;
+		margin:35px 9%;
+		text-align:left;}
+		
+	.banner-head .pure-button {
+		margin:auto;}
 }
 
 
