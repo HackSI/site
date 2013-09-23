@@ -3,8 +3,9 @@
  * Most of these are inherited from Base, but I want to change a few.
  */
 body {
-    background-color: #DEE7F0;
-    color: #526066;
+    background-color: #fff;
+    color: #02172a;
+	font-family: 'open_sansregular';
 }
 
 h2, h3 {
@@ -18,8 +19,9 @@ h2, h3 {
 }
 
 p {
-    line-height: 1.6em;
-	font-family: 'open_sansregular';
+    font-size: 1.25em;
+    line-height: 1.3;
+	
 }
 
 a {
@@ -153,11 +155,7 @@ a:hover {
  * Every pricing table has the .pricing-table class
  */
 .pricing-table {
-    border: 1px solid #ddd;
-    margin: 0 0.5em;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+	margin:0 10px;
 }
 
 /*
@@ -165,11 +163,13 @@ a:hover {
  * Choose a different color based on the type of pricing table.
  */
 .pricing-table-free .pricing-table-header {
-    background: black;
+    background: #02172a url(../img/learn.png) no-repeat top left;
+	padding:0 0 20px;
 }
 
 .pricing-table-biz .pricing-table-header {
-    background: #d53a3a;
+    background: #d53a3a url(../img/build.png) no-repeat top left;
+	padding:0 0 20px;	
 }
 
 /*
@@ -177,21 +177,21 @@ a:hover {
  * By default, a header is black/white, and has some styles for its <h2> name.
  */
 .pricing-table-header {
-    background: #062440;
+    background: #275c89 url(../img/pitch.png) no-repeat top left;
     color: #fff;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+	padding:0 0 20px;
 }
-    .pricing-table-header h2 {
-        margin: 0;
-        padding-top: .5em;
-        font-size: 2em;
-        font-weight: bold;
-    }
-    .pricing-table-header p {
-        padding: .5em;
-    }
+.pricing-table-header h2 {
+	margin: 0;
+	padding-top: .5em;
+	font-size: 2.75em;
+}
+.pricing-table-header p {
+	padding: 0 16%;
+}    
 
 
 /*
@@ -199,23 +199,10 @@ a:hover {
  * Styles for the price and the corresponding <span>per month</span>
  */
 .pricing-table-price {
-    font-size: 1em;
-    display: block;
-    text-align: center;
-    margin: 0.2em 0 1.2em 0;
-    padding-bottom: 0.4em;
-    font-weight: 100;
+	font-family: 'open_sansextrabold';
+	color:rgba(255, 255, 255, 0.4);
+	font-size:1.25em;
 }
-    .pricing-table-price span {
-        display: block;
-        text-transform: uppercase;
-        font-size: 0.2em;
-        padding-bottom: 2em;
-        font-weight: 400;
-        color: rgba(255, 255, 255, 0.5);
-        *color: #fff;
-    }
-
 
 
 /*
@@ -317,12 +304,18 @@ a:hover {
 	.banner-head .registerPointer{
 		width:775px;
 		margin-top:212px;}
+		
+	.footer .pure-g,
+	.content {
+		margin: 1em auto;
+		max-width:750px;
+}
 
 }
 /*
  * -- LARGE PHONES AND TABLET MEDIA QUERIES --
  */
-@media(max-width: 799px) {
+@media(max-width: 899px) {
 
     .banner-head {
 		max-width:90%;
@@ -379,10 +372,15 @@ a:hover {
 	.banner-head .registerPointer{
 		width:100%;
 		margin-top:212px;}
+	
+	.footer .pure-g,
+	.content {
+		margin: 1em auto;
+		width:90%;}
 
 }
 
-@media(max-width: 640px) {
+@media(max-width: 740px) {
 	.banner-head h1 {
 		font-size: 3.5em;
 		margin-top:20px;}
@@ -393,13 +391,13 @@ a:hover {
 		background-size:35px;}
 }
 
-@media(max-width: 580px) {
+@media(max-width: 680px) {
 	.banner-head h1 {
 		font-size: 3em;
 		margin-top:35px;}
 }
 
-@media(max-width: 550px) {
+@media(max-width: 650px) {
 	.banner-head h1 {
 		font-size: 2.5em;
 		margin-top:50px;}
@@ -409,7 +407,7 @@ a:hover {
  * -- PHONE MEDIA QUERIES --
  * On phones, we want to reduce the height and font-size of the banner further
  */
-@media (max-width: 480px) {
+@media (max-width: 580px) {
 	.pure-u-1-5 {
 		width:100%;
 		text-align:center;}
@@ -504,8 +502,10 @@ h2.title {
     background-color: #d53a3a;
 }
 
+.footer .pure-g,
 .content {
-    margin: 1em;
+    margin: 1em auto;
+	max-width:960px;
 }
 
 .social {
@@ -530,5 +530,7 @@ h2.title {
 }
 
 .second h2 {
-    font-size: 1em;
+    margin: 0;
+	padding-top: .5em;
+	font-size: 2em;
 }
