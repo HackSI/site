@@ -29,6 +29,10 @@ app.get('/flickr', function (req, res) {
     res.redirect('http://www.flickr.com/groups/hacksi/');
 });
 
+app.get('/lanyrd', function (req, res) {
+    res.redirect('http://lanyrd.com/2013/hacksi/');
+});
+
 app.get('/about', function (req, res) {
     res.render('about');
 });
