@@ -4,13 +4,14 @@
     <meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> <!-- mobile viewport -->
     <title>hacksi.me</title>
-	
-	<script src="/js/responsive-nav.js"></script>
-	<link rel="stylesheet" href="/css/responsive-nav.css">
-	
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
-    <link rel="stylesheet" href="/css/social-icons.css ">
-    <link rel="stylesheet" href="/css/site.css">
+    {{#if development}}
+	<link rel="stylesheet" href="/css/responsive-nav.css">
+	<link rel="stylesheet" href="css/social-icons.css">
+	<link rel="stylesheet" href="/css/site.css">
+    {{else}}
+	<link rel="stylesheet" href="/combo?/css/responsive-nav.css&/css/social-icons.css&/css/site.css">
+    {{/if}}
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
@@ -52,28 +53,19 @@
 
 {{{body}}}
 
-<!--div class="sponsors">
-    <div class="pure-g-r">
-        <div class="pure-u-1-5">S1</div>
-        <div class="pure-u-1-5">S1</div>
-        <div class="pure-u-1-5">S1</div>
-        <div class="pure-u-1-5">S1</div>
-        <div class="pure-u-1-5">S1</div>
-    </div>
-</div-->
-
 <div class="footer">
     <div class="pure-g">
         <div class="pure-u-1-2">&copy; 2013 - Hack SI - All rights reserved.</div>
         <div class="pure-u-1-2 social">
             Follow us on: 
-            <a href="http://twitter.com/hacksi" class="social-icon-twitter" title="Twitter"><span>Twitter</span></a>
-            <a href="https://github.com/HackSI" class="social-icon-github" title="Github"><span>Github</span></a>
-            <a href="https://www.facebook.com/HackSouthernIllinois" class="social-icon-facebook" title="Facebook"><span>Facebook</span></a>
-            <a href="http://www.flickr.com/groups/hacksi/" class="social-icon-flickr" title="Flickr"><span>Flickr</span></a>
+            <a href="/twitter" class="social-icon-twitter" title="Twitter"><span>Twitter</span></a>
+            <a href="/github" class="social-icon-github" title="Github"><span>Github</span></a>
+            <a href="/facebook" class="social-icon-facebook" title="Facebook"><span>Facebook</span></a>
+            <a href="/flickr" class="social-icon-flickr" title="Flickr"><span>Flickr</span></a>
         </div>
     </div>
 </div>
+<script src="/js/responsive-nav.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -82,9 +74,8 @@
 
   ga('create', 'UA-39639122-2', 'hacksi.me');
   ga('send', 'pageview');
-</script>
-<script>
-	var nav = responsiveNav(".nav-collapse");
+ 
+ var nav = responsiveNav(".nav-collapse");
 </script>
 </body>
 </html>
