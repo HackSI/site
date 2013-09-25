@@ -5,13 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> <!-- mobile viewport -->
     <title>hacksi.me</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
-    {{#if development}}
-	<link rel="stylesheet" href="/css/responsive-nav.css">
-	<link rel="stylesheet" href="css/social-icons.css">
-	<link rel="stylesheet" href="/css/site.css">
-    {{else}}
-	<link rel="stylesheet" href="/combo?css/responsive-nav.css&css/social-icons.css&css/site.css">
-    {{/if}}
+
+    {{addCSS "/css/responsive-nav.css"}}
+    {{addCSS "/css/social-icons.css"}}
+    {{addCSS "/css/site.css"}}
+    
+    {{{writeCSS}}}
+
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>

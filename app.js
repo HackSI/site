@@ -1,30 +1,9 @@
 var express = require('express'),
-    exphbs  = require('express3-handlebars'),
-    helmet = require('helmet'),
-    combo = require('combohandler'),
+    general = require('./lib/general.js'),
     app = express();
 
-helmet.defaults(app);
-
-app.use(express['static']('./static'));
-app.get('/combo', combo.combine({rootPath: './static'}), combo.respond);
-
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
-app.set('view engine', 'handlebars');
-
-// development only
-app.configure('development', function(){
-    app.locals({
-        development: true
-    });
-});
-
-// production only
-app.configure('production', function(){
-    app.locals({
-        development: false
-    });
-});
+//General setup stuff
+general(app);
 
 app.get('/', function (req, res) {
     res.render('home');

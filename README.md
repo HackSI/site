@@ -18,6 +18,16 @@ Testing & Linting
 
 `npm test`
 
+Production
+----------
+
+`npm -g install grunt-cli`
+
+   * `cd site`
+   * `grunt`
+   * `git commit -am "CSS files"`
+
+
 Build Status
 ------------
 
