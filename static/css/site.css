@@ -15,13 +15,28 @@ h2, h3 {
 }
 
 .pure-menu.pure-menu-open {
-    background-color: #DEE7F0;
+    background-color: #010508;
 }
 
+.pure-menu a, .pure-menu .pure-menu-can-have-children > li:after {
+	color:#aaa;}
+	
+.pure-menu li a:hover, .pure-menu li a:focus {
+	color:#D53A3A;
+	text-decoration:none;}
+
+.pure-menu .pure-menu-selected a {
+	color:#aaa;}
+
+.pure-menu li a {
+	padding: 5px 49px;}
+	
+.pure-menu.pure-menu-horizontal > ul {
+	height:2.2em;}
+	
 p {
     font-size: 1.25em;
     line-height: 1.3;
-	
 }
 
 a {
@@ -34,10 +49,10 @@ a:hover {
 }
 .pure-menu li a:hover, .pure-menu li a:focus {
     background-color: #062440;
-    color: #DEE7F0;
 }
 .pure-menu.pure-menu-open.pure-menu-fixed {
     border-bottom: 0px;
+	text-align:center;
 }
 
 /*
