@@ -4,6 +4,10 @@
     <meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> <!-- mobile viewport -->
     <title>hacksi.me</title>
+	
+	<script src="/js/responsive-nav.js"></script>
+	<link rel="stylesheet" href="/css/responsive-nav.css">
+	
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
     <link rel="stylesheet" href="/css/social-icons.css ">
     <link rel="stylesheet" href="/css/site.css">
@@ -11,9 +15,9 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
-<div class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+<div class="nav-collapse">
     <ul>
-        <li class="pure-menu-selected"><a href="/">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/register">Register</a></li>
         <li><a href="/sponsors">Sponsors</a></li>
@@ -78,6 +82,9 @@
 
   ga('create', 'UA-39639122-2', 'hacksi.me');
   ga('send', 'pageview');
+</script>
+<script>
+	var nav = responsiveNav(".nav-collapse");
 </script>
 </body>
 </html>
