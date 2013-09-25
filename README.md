@@ -8,6 +8,7 @@ Development
 
    * Install [Node.js](http://nodejs.org/)
    * Clone this repo
+   * `cd site`
    * `npm install`
    * `npm start`
    * Visit `http://127.0.0.1:8900/`
