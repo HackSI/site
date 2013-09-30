@@ -9,8 +9,13 @@
 }
 
 .nav-collapse li {
-  width: 100%;
   display: block;
+  font-weight:bold;
+}
+
+.nav-collapse li a{
+  display: block;
+  padding:5px 0;
 }
 
 .js .nav-collapse {
@@ -45,6 +50,7 @@
   border-radius: 0 0 10px 10px;
   width:85px;
   color:#ccc;
+  font-weight:bold;
 }
 
 
