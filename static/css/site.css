@@ -20,7 +20,7 @@ h2, h3 {
 .nav-collapse a:hover {
 	text-decoration:none;}
 
-@media screen and (min-width: 799px) and (max-width: 2000px) {	
+@media screen and (min-width: 799px) {	
 	.nav-collapse.closed ul {
 		width:960px;
 		margin:auto;}	
@@ -535,7 +535,7 @@ h2.title {
 
 }
 
-@media(max-width: 740px) {
+@media(max-width: 799px) {
 	.nav-collapse ul{
 		padding: 10px 0px;
 		font-size:1.25em;}	
