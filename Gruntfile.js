@@ -9,12 +9,17 @@ module.exports = function(grunt) {
                 src: ['*.css', '!*.min.css'],
                 dest: 'static/css/',
                 ext: '.min.css'
+            },
+            combine: {
+                files: {
+                    'static/css/bundle.min.css': [ 
+                        'static/css/*.min.css'
+                    ]
+                }
             }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-
     grunt.registerTask('default', ['cssmin']);
-
 };
