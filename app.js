@@ -21,6 +21,10 @@ app.get('/github', function (req, res) {
     res.redirect('https://github.com/HackSI');
 });
 
+app.get('/volunteer', function (req, res) {
+    res.redirect('https://docs.google.com/forms/d/1_V-AT64U3ZarmQE15I8Sm_gxxjzf6bY_kNaaewPDkyU/viewform');
+});
+
 app.get('/facebook', function (req, res) {
     res.redirect('https://www.facebook.com/HackSouthernIllinois');
 });
