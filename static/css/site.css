@@ -338,9 +338,10 @@ h2.title {
 .sponsors {
     width: 960px;
     margin: 60px auto 20px;
+	text-align:center;
 }
 
-.sponsor-img{
+.sponsors img{
 	text-align:center;
 }
 
