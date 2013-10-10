@@ -343,6 +343,8 @@ h2.title {
 
 .sponsors img{
 	text-align:center;
+	margin:5px 10px;
+	height:75px;
 }
 
 .pure-button {
