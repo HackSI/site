@@ -25,6 +25,14 @@ app.get('/volunteer', function (req, res) {
     res.redirect('https://docs.google.com/forms/d/1_V-AT64U3ZarmQE15I8Sm_gxxjzf6bY_kNaaewPDkyU/viewform');
 });
 
+app.get('/tracker', function (req, res) {
+    res.redirect('https://docs.google.com/forms/d/1-E4vMbeFeurpaHFf1PjrQe2KBKeQodFTtKz7Fkuy4Tc/viewform');
+});
+
+app.get('/survey', function (req, res) {
+    res.redirect('https://docs.google.com/forms/d/1D4OvQt1qRJkjp5LueuNknFj2L3Rzh4yl0jbD1qjwx_0/viewform');
+});
+
 app.get('/facebook', function (req, res) {
     res.redirect('https://www.facebook.com/HackSouthernIllinois');
 });
