@@ -5,10 +5,6 @@ var express = require('express'),
 //General setup stuff
 general(app);
 
-app.get('/', function (req, res) {
-    res.render('home');
-});
-
 app.get('/register', function (req, res) {
     res.redirect('http://hacksi.eventbrite.com/');
 });
@@ -45,16 +41,24 @@ app.get('/lanyrd', function (req, res) {
     res.redirect('http://lanyrd.com/2013/hacksi/');
 });
 
+app.get('/', function (req, res) {
+    res.render('home', { title: 'home'});
+});
+
 app.get('/about', function (req, res) {
-    res.render('about');
+    res.render('about', { title: 'about'});
 });
 
 app.get('/sponsors', function (req, res) {
-    res.render('sponsors');
+    res.render('sponsors', { title: 'sponsors'});
 });
 
 app.get('/contact', function (req, res) {
-    res.render('contact');
+    res.render('contact', { title: 'contact' });
+});
+
+app.get('/schedule', function (req, res) {
+    res.render('schedule', 'schedule');
 });
 
 app.get('*', function(req, res) {
