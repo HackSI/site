@@ -1,0 +1,17 @@
+<div class="content">
+    <h2 id="live">Hack SI Live</h2>
+
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+        {{> counter }}
+        </div>
+		<div class="pure-u-1-2">
+        {{> twitter }}
+        </div>
+    </div>
+</div>
+<script>
+if (location.hash != '#live') {
+    location.href = location.href + '#live';
+}
+</script>

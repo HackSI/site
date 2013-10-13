@@ -58,7 +58,11 @@ app.get('/contact', function (req, res) {
 });
 
 app.get('/schedule', function (req, res) {
-    res.render('schedule', 'schedule');
+    res.render('schedule', { title: 'schedule' });
+});
+
+app.get('/live', function (req, res) {
+    res.render('live', { title: 'live' });
 });
 
 app.get('*', function(req, res) {

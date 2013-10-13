@@ -14,13 +14,10 @@
     <meta property="og:image" content="http://hacksi.me/img/logo.jpg"/>
     <meta property="og:type" content="blog"/>
     <meta property="og:description" content="The first ever Southern Illinois Hackathon. What can you build in 12 hours?"/>
-
     {{addCSS "/css/responsive-nav.css"}}
     {{addCSS "/css/social-icons.css"}}
     {{addCSS "/css/site.css"}}
-    
     {{{writeCSS}}}
-
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
@@ -39,6 +36,7 @@
 
 <div class="banner">
     <div class="banner-head">
+        <div id="countdown"></div>
         <div class="pure-g">
 			<div class="registerPointer"></div>
             <div class="pure-u-1-5">
@@ -49,8 +47,8 @@
                 can you build?</h1>
                 <div class="pure-g">
                     <div class="pure-u-1-2 date-loc">
-                    <span class="date">NOV 2nd 2013 10am-10pm</span><br>
-                    <a class="location" href="http://goo.gl/maps/Ppm6U" target="_blank">Dunn-Richmond Center - Carbondale, IL</a>
+                        <span class="date">NOV 2nd 2013 10am-10pm</span><br>
+                        <a class="location" href="http://goo.gl/maps/Ppm6U" target="_blank">Dunn-Richmond Center - Carbondale, IL</a>
                     </div>
                     <div class="pure-u-1-2">
                         <a href="/register" class="pure-button">Register Today</a>
@@ -66,16 +64,13 @@
 <div class="sponsors">
 	<h2 class="title">Sponsors</h2>
 	<div class="sponsors">
-	<a href="http://liaison.com/" target="_blank"><img src="/img/liason.png"></a>
-	<a href="http://siu.edu/" target="_blank"><img src="/img/siu.png"></a>
-	<a href="http://splatteredink.com/" target="_blank"><img src="/img/si-logo.png"></a><br>
-	<a href="https://travis-ci.org/" target="_blank"><img src="/img/travis.png"></a>
-	<a href="http://www.cc-solution.com/" target="_blank"><img src="/img/ccs.png"></a>
-	<a href="https://github.com/" target="_blank"><img src="/img/github.png"></a>
-	<a href="http://developer.yahoo.com/" target="_blank"><img src="/img/yahoo.jpg"></a>
-	
-	
-
+        <a href="http://liaison.com/" target="_blank"><img src="/img/liason.png"></a>
+        <a href="http://siu.edu/" target="_blank"><img src="/img/siu.png"></a>
+        <a href="http://splatteredink.com/" target="_blank"><img src="/img/si-logo.png"></a><br>
+        <a href="https://travis-ci.org/" target="_blank"><img src="/img/travis.png"></a>
+        <a href="http://www.cc-solution.com/" target="_blank"><img src="/img/ccs.png"></a>
+        <a href="https://github.com/" target="_blank"><img src="/img/github.png"></a>
+        <a href="http://developer.yahoo.com/" target="_blank"><img src="/img/yahoo.jpg"></a>
 	</div>
 </div>
 
@@ -93,6 +88,7 @@
     </div>
 </div>
 <script src="/js/responsive-nav.js"></script>
+<script src="/js/countdown.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -115,6 +115,13 @@ a:hover {
     margin-bottom: 0;
     margin: auto auto;
     margin-top: 5.5em;
+    position: relative;
+}
+
+#countdown {
+    position: absolute;
+    top: -20px;
+    right: 0;
 }
 
 .banner-head a {
