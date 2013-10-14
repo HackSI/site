@@ -57,6 +57,14 @@ app.get('/sponsors', function (req, res) {
     res.render('sponsors', { title: 'sponsors'});
 });
 
+app.get('/sponsors/letter', function (req, res) {
+    res.render('sponsor-letter', { title: 'sponsors'});
+});
+
+app.get('/sponsors/letter/print', function (req, res) {
+    res.render('letter', { title: 'sponsors', layout: 'print'});
+});
+
 app.get('/contact', function (req, res) {
     res.render('contact', { title: 'contact' });
 });
