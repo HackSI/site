@@ -69,6 +69,10 @@ app.get('/live', function (req, res) {
     res.render('live', { title: 'live' });
 });
 
+app.get('/code', function (req, res) {
+    res.render('code', { title: 'code of conduct' });
+});
+
 app.get('*', function(req, res) {
     res.send(404, 'Not Found');
 });
