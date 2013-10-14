@@ -34,6 +34,9 @@ h2, h3 {
 		
 	.nav-collapse.closed li a{
 		color:#ccc;}
+
+	.nav-collapse.closed li a:hover{
+		color:#d53a3a;}
 }	
 
 p {
@@ -628,7 +631,7 @@ h2.title {
     }
 	.banner-head h1 {
 		font-size: 3em;
-		margin-top:35px;}
+		margin-top:0px;}
 		
 	.pure-u-1-2 {
 		margin:auto;
@@ -655,4 +658,21 @@ h2.title {
 	.banner-head h1 {
 		font-size: 2.5em;
 		margin-top:35px;}
+}
+
+.footer-nav ul {
+    text-align: center;
+}
+.footer-nav ul li {
+    display: inline;
+    font-size: 70%;
+    border-right: 1px dashed #888;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.footer-nav ul li.last {
+    border: 0;
+}
+.footer-nav ul li a {
+    color: #888;
 }

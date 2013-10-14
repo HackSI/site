@@ -33,6 +33,10 @@ app.get('/facebook', function (req, res) {
     res.redirect('https://www.facebook.com/HackSouthernIllinois');
 });
 
+app.get('/google', function (req, res) {
+    res.redirect('https://plus.google.com/communities/108109882393061170322');
+});
+
 app.get('/flickr', function (req, res) {
     res.redirect('http://www.flickr.com/groups/hacksi/');
 });
