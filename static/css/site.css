@@ -348,9 +348,18 @@ h2.title {
     text-align: center;
 }
 
+hr{
+	border: 0; 
+	height: 1px; 
+	background: #ccc; 
+	background-image: -webkit-linear-gradient(left, #fff, #ccc, #fff); 
+	background-image: -moz-linear-gradient(left, #fff, #ccc, #fff); 
+	background-image: -ms-linear-gradient(left, #fff, #ccc, #fff); 
+	background-image: -o-linear-gradient(left, #fff, #ccc, #fff); }
+
 .sponsors {
     width: 960px;
-    margin: 60px auto 20px;
+    margin: 30px auto 20px;
 	text-align:center;
 }
 
