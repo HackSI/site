@@ -367,9 +367,9 @@ h2.title {
 }
 
 hr{
-	border: 0; 
+	border: 0px; 
 	height: 1px; 
-	background: #ccc; 
+	background-color: #ccc; 
 	background-image: -webkit-linear-gradient(left, #fff, #ccc, #fff); 
 	background-image: -moz-linear-gradient(left, #fff, #ccc, #fff); 
 	background-image: -ms-linear-gradient(left, #fff, #ccc, #fff); 

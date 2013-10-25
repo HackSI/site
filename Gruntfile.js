@@ -13,7 +13,9 @@ module.exports = function(grunt) {
             combine: {
                 files: {
                     'static/css/bundle.min.css': [ 
-                        'static/css/*.min.css'
+                        'static/css/r*.min.css',
+                        'static/css/so*.min.css',
+                        'static/css/si*.min.css'
                     ]
                 }
             }
