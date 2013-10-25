@@ -299,6 +299,24 @@ a:hover {
         color: #ddd;
     }
 
+
+	.footer-nav ul {
+		text-align: center;
+	}
+	.footer-nav ul li {
+		display: inline;
+		font-size: 70%;
+		border-right: 1px dashed #888;
+		padding-right: 8px;
+		padding-left: 8px;
+	}
+	.footer-nav ul li.last {
+		border: 0;
+	}
+	.footer-nav ul li a {
+		color: #888;
+    }
+
 /*
 HACK SI
 */
@@ -687,19 +705,4 @@ h2.title {
 	.banner-head .registerPointer {
 		margin-top: 548px;}	
 
-	.footer-nav ul {
-		text-align: center;
-	}
-	.footer-nav ul li {
-		display: inline;
-		font-size: 70%;
-		border-right: 1px dashed #888;
-		padding-right: 8px;
-		padding-left: 8px;
-	}
-	.footer-nav ul li.last {
-		border: 0;
-	}
-	.footer-nav ul li a {
-		color: #888;
 }
