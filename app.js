@@ -73,6 +73,18 @@ app.get('/schedule', function (req, res) {
     res.render('schedule', { title: 'schedule' });
 });
 
+app.get('/schedule/reid', function (req, res) {
+    res.render('reid', { title: 'schedule' });
+});
+
+app.get('/schedule/steve', function (req, res) {
+    res.render('steve', { title: 'schedule' });
+});
+
+app.get('/schedule/skyler', function (req, res) {
+    res.render('skyler', { title: 'schedule' });
+});
+
 app.get('/live', function (req, res) {
     res.render('live', { title: 'live' });
 });
