@@ -97,6 +97,10 @@ app.get('/code', function (req, res) {
     res.render('code', { title: 'code of conduct' });
 });
 
+app.get('/press', function (req, res) {
+    res.render('press', { title: 'press' });
+});
+
 app.get('*', function(req, res) {
     res.send(404, 'Not Found');
 });
