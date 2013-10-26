@@ -1,0 +1,53 @@
+<h1></h1>
+
+<style>
+body {
+    background-color: #02172A;
+    color: white;
+    font-family: Helvetica;
+}
+
+body.over {
+    background-color: #d53a3a;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20em;
+    text-shadow: 4px 4px 2px #000;
+}
+
+.over h1 {
+    text-shadow: 4px 4px 2px #000;
+}
+</style>
+
+<script>
+(function() {
+    var h1 = document.getElementsByTagName('h1')[0],
+        body = document.body,
+        duration = 120,
+        timer;
+
+    if (location.search.indexOf('?duration=') === 0) {
+        duration = parseInt(location.search.replace('?duration=', ''));
+    }
+
+    h1.innerHTML = duration;
+
+    timer = setInterval(function() {
+        --duration;
+        if (duration === 0) {
+            clearTimeout(timer);
+            h1.innerHTML = 'Done!';
+            return;
+        }
+        if (duration <= 30 && body.className === '') {
+            body.className = 'over';
+        }
+        h1.innerHTML = duration;
+    }, 1000);
+
+}());
+
+</script>

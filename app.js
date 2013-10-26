@@ -65,6 +65,10 @@ app.get('/sponsors/letter/print', function (req, res) {
     res.render('letter', { title: 'sponsors', layout: 'print'});
 });
 
+app.get('/timer', function (req, res) {
+    res.render('timer', { title: 'timer', layout: 'timer'});
+});
+
 app.get('/contact', function (req, res) {
     res.render('contact', { title: 'contact' });
 });
