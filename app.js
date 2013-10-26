@@ -74,15 +74,19 @@ app.get('/schedule', function (req, res) {
 });
 
 app.get('/schedule/reid', function (req, res) {
-    res.render('reid', { title: 'schedule' });
+    res.render('reid', { title: 'speaker: reid' });
 });
 
 app.get('/schedule/steve', function (req, res) {
-    res.render('steve', { title: 'schedule' });
+    res.render('steve', { title: 'speaker: steve' });
 });
 
 app.get('/schedule/skyler', function (req, res) {
-    res.render('skyler', { title: 'schedule' });
+    res.render('skyler', { title: 'speaker: skyler' });
+});
+
+app.get('/schedule/ellen', function (req, res) {
+    res.render('ellen', { title: 'speaker: ellen' });
 });
 
 app.get('/live', function (req, res) {
