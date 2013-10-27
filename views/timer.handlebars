@@ -27,13 +27,32 @@ h1 {
     var h1 = document.getElementsByTagName('h1')[0],
         body = document.body,
         duration = 120,
-        timer;
+        timer, format, pad;
+
+    pad = function(i) {
+        if (i < 10) {
+            i = '0' + i;
+        }
+        return i;
+    };
+
+    format = function(d) {
+        var str = d, min, sec;
+        if (str < 60) {
+            str = '0:' + pad(d);
+        } else {
+            min = Math.floor(d / 60);
+            sec = (d - (min * 60));
+            str = min + ':' + pad(sec);
+        }
+        return str;
+    };
 
     if (location.search.indexOf('?duration=') === 0) {
         duration = parseInt(location.search.replace('?duration=', ''));
     }
 
-    h1.innerHTML = duration;
+    h1.innerHTML = format(duration);
 
     timer = setInterval(function() {
         --duration;
@@ -45,7 +64,7 @@ h1 {
         if (duration <= 30 && body.className === '') {
             body.className = 'over';
         }
-        h1.innerHTML = duration;
+        h1.innerHTML = format(duration);
     }, 1000);
 
 }());
