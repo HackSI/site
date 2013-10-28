@@ -57,6 +57,10 @@ app.get('/sponsors', function (req, res) {
     res.render('sponsors', { title: 'sponsors'});
 });
 
+app.get('/sponsors/levels', function (req, res) {
+    res.render('sponsors-levels', { title: 'sponsors'});
+});
+
 app.get('/sponsors/letter', function (req, res) {
     res.render('sponsor-letter', { title: 'sponsors'});
 });
