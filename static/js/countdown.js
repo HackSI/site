@@ -30,13 +30,13 @@
          
         minutes = parseInt(seconds_left / 60);
         seconds = parseInt(seconds_left % 60);
-        
+
         // format countdown string + set tag value
         if (!countdown) {
             return;
         }
 
-        var str = ((days) ? days + ' days, ' : '') + ((days) ? hours + ' hours, ' : '')
+        var str = ((days) ? days + ' days, ' : '') + ((days || hours) ? hours + ' hours, ' : '')
             + ((minutes) ? pad(minutes) + ' minutes and ' : '') + ((seconds) ? pad(seconds) + ' seconds' : '');  
         
         if (str !== '') {
