@@ -26,7 +26,7 @@ h1 {
 (function() {
     var h1 = document.getElementsByTagName('h1')[0],
         body = document.body,
-        duration = 120,
+        duration = {{duration}},
         timer, format, pad;
 
     pad = function(i) {
@@ -48,14 +48,10 @@ h1 {
         return str;
     };
 
-    if (location.search.indexOf('?duration=') === 0) {
-        duration = parseInt(location.search.replace('?duration=', ''));
-    }
-
-    h1.innerHTML = format(duration);
-
-    timer = setInterval(function() {
-        --duration;
+    var runner = function(a) {
+        if (a === undefined) {
+            --duration;
+        }
         if (duration === 0) {
             clearTimeout(timer);
             h1.innerHTML = 'Done!';
@@ -65,7 +61,11 @@ h1 {
             body.className = 'over';
         }
         h1.innerHTML = format(duration);
-    }, 1000);
+    };
+
+    timer = setInterval(runner, 1000);
+
+    runner(true);
 
 }());
 

@@ -70,7 +70,19 @@ app.get('/sponsors/letter/print', function (req, res) {
 });
 
 app.get('/timer', function (req, res) {
-    res.render('timer', { title: 'timer', layout: 'timer'});
+    var duration = req.query.duration || 120,
+        min = req.query.minutes,
+        sec = req.query.seconds;
+    if (min || sec) {
+        duration = 0;
+        if (min) {
+            duration = Number(min) * 60;
+        }
+        if (sec) {
+            duration += Number(sec);
+        }
+    }
+    res.render('timer', { title: 'timer', layout: 'timer', duration: duration});
 });
 
 app.get('/contact', function (req, res) {
