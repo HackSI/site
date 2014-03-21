@@ -4,6 +4,9 @@
   "description": "The hacksi.me website",
   "author": "Dav Glass <davglass@gmail.com>",
   "version": "0.0.0",
+  "engines": {
+      "node": "0.10.x"
+  },
   "dependencies": {
     "helmet": "~0.1.0",
     "express3-handlebars": "~0.5.0",
