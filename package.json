@@ -21,7 +21,7 @@
     "watch": "~0.8.0"
   },
   "scripts": {
-    "start": "node ./server.js",
+    "start": "node ./app.js",
     "pretest": "jshint --config ./node_modules/yui-lint/jshint.json ./app.js ./tests/",
     "test": "istanbul cover --print both vows -- --spec ./tests/*.js"
   },
