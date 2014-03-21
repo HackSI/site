@@ -28,6 +28,11 @@ Production
    * `git commit -am "CSS files"`
 
 
+Deployment
+----------
+
+Pushing the site will automatically build it on Travis and deploy it to Heroku.
+
 Build Status
 ------------
 
