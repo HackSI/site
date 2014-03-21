@@ -1,3 +1,10 @@
 language: node_js
 node_js:
-    - "0.10"
+- '0.10'
+deploy:
+  provider: heroku
+  api_key:
+    secure: PkBnm2SPLWtRb0RJS8OS1LGdR2OxInuWzfGmleLjlf9JUY/f1SqG8b1llNziPQSctITJr3/mT1gvbMttzBQnmbV5F9nXJ3oN7s3g2NOTD279IAlB/aVUMSE4TJi6cq4BgDuG+3XeslKahAnLo3wMNQQkI9u9sePB9BnhF53sH3c=
+  app: hacksi
+  on:
+    repo: HackSI/site
