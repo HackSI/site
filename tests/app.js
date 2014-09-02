@@ -3,7 +3,7 @@ var vows = require('vows'),
     request = require('request'),
     app = require('../app.js');
 
-    app.listen(8900);
+    //app.listen(8900);
 
 var fetch = function(p, cb) {
     var url = 'http://127.0.0.1:8900' + p;
@@ -35,7 +35,7 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
-                    assert.equal(200, topic.statusCode);
+                    assert.equal(topic.statusCode, 200);
                 }
             },
             '/about': {
@@ -46,7 +46,7 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
-                    assert.equal(200, topic.statusCode);
+                    assert.equal(topic.statusCode, 200);
                 }
             },
             '/register': {
@@ -57,7 +57,161 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
-                    assert.equal(200, topic.statusCode);
+                    assert.equal(topic.statusCode, 200);
+                }
+            },
+            '/twitter': {
+                topic: function() {
+                    var self = this;
+                    fetch('/twitter', function(err, res) {
+                        self.callback(err, res);
+                    });
+                },
+                'answer with a 200': function(topic) {
+                    assert.equal(topic.statusCode, 200);
+                }
+            },
+            '/github': {
+                topic: function() {
+                    var self = this;
+                    fetch('/github', function(err, res) {
+                        self.callback(err, res);
+                    });
+                },
+                'answer with a 200': function(topic) {
+                    assert.equal(topic.statusCode, 200);
+                }
+            },
+            '/facebook': {
+                topic: function() {
+                    var self = this;
+                    fetch('/facebook', function(err, res) {
+                        self.callback(err, res);
+                    });
+                },
+                'answer with a 200': function(topic) {
+                    assert.equal(topic.statusCode, 200);
+                }
+            },
+            '/google': {
+                topic: function() {
+                    var self = this;
+                    fetch('/google', function(err, res) {
+                        self.callback(err, res);
+                    });
+                },
+                'answer with a 200': function(topic) {
+                    assert.equal(topic.statusCode, 200);
+                }
+            },
+            '/flickr': {
+                topic: function() {
+                    var self = this;
+                    fetch('/flickr', function(err, res) {
+                        self.callback(err, res);
+                    });
+                },
+                'answer with a 200': function(topic) {
+                    assert.equal(topic.statusCode, 200);
+                }
+            },
+            '/sponsors': {
+                topic: function() {
+                    var self = this;
+                    fetch('/sponsors', function(err, res) {
+                        self.callback(err, res);
+                    });
+                },
+                'answer with a 200': function(topic) {
+                    assert.equal(topic.statusCode, 200);
+                }
+            },
+            '/sponsors/levels': {
+                topic: function() {
+                    var self = this;
+                    fetch('/sponsors/levels', function(err, res) {
+                        self.callback(err, res);
+                    });
+                },
+                'answer with a 200': function(topic) {
+                    assert.equal(topic.statusCode, 200);
+                }
+            },
+            '/sponsors/letter': {
+                topic: function() {
+                    var self = this;
+                    fetch('/sponsors/letter', function(err, res) {
+                        self.callback(err, res);
+                    });
+                },
+                'answer with 200': function(topic) {
+                    assert.equal(topic.statusCode, 200);
+                }
+            },
+            '/sponsors/letter/print': {
+                topic: function() {
+                    var self = this;
+                    fetch('/sponsors/letter/print', function(err, res) {
+                        self.callback(err, res);
+                    });
+                },
+                'answer with 200': function(topic) {
+                    assert.equal(topic.statusCode, 200);
+                }
+            },
+            '/contact': {
+                topic: function() {
+                    var self = this;
+                    fetch('/contact', function(err, res) {
+                        self.callback(err, res);
+                    });
+                },
+                'answer with a 200': function(topic) {
+                    assert.equal(topic.statusCode, 200);
+                }
+            },
+            '/schedule': {
+                topic: function() {
+                    var self = this;
+                    fetch('/schedule', function(err, res) {
+                        self.callback(err, res);
+                    });
+                },
+                'answer with a 200': function(topic) {
+                    assert.equal(topic.statusCode, 200);
+                }
+            },
+            '/live': {
+                topic: function() {
+                    var self = this;
+                    fetch('/live', function(err, res) {
+                        self.callback(err, res);
+                    });
+                },
+                'answer with a 200': function(topic) {
+                    assert.equal(topic.statusCode, 200);
+                }
+            },
+            '/code': {
+                topic: function() {
+                    var self = this;
+                    fetch('/code', function(err, res) {
+                        self.callback(err, res);
+                    });
+                },
+                'answer with a 200': function(topic) {
+                    assert.equal(topic.statusCode, 200);
+                }
+            },
+            '/press': {
+                topic: function() {
+                    var self = this;
+                    fetch('/press', function(err, res) {
+                        self.callback(err, res);
+                    });
+                },
+                'answer with a 200': function(topic) {
+                    assert.equal(topic.statusCode, 200);
                 }
             }
         }

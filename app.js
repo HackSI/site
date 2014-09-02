@@ -17,6 +17,7 @@ app.get('/github', function (req, res) {
     res.redirect('https://github.com/HackSI');
 });
 
+/*
 app.get('/volunteer', function (req, res) {
     res.redirect('https://docs.google.com/forms/d/1_V-AT64U3ZarmQE15I8Sm_gxxjzf6bY_kNaaewPDkyU/viewform');
 });
@@ -28,6 +29,7 @@ app.get('/tracker', function (req, res) {
 app.get('/survey', function (req, res) {
     res.redirect('https://docs.google.com/forms/d/1D4OvQt1qRJkjp5LueuNknFj2L3Rzh4yl0jbD1qjwx_0/viewform');
 });
+*/
 
 app.get('/facebook', function (req, res) {
     res.redirect('https://www.facebook.com/HackSouthernIllinois');
@@ -41,9 +43,11 @@ app.get('/flickr', function (req, res) {
     res.redirect('http://www.flickr.com/groups/hacksi/');
 });
 
+/*
 app.get('/lanyrd', function (req, res) {
     res.redirect('http://lanyrd.com/2013/hacksi/');
 });
+*/
 
 app.get('/', function (req, res) {
     res.render('home', { title: 'home'});
@@ -61,6 +65,7 @@ app.get('/sponsors/levels', function (req, res) {
     res.render('sponsors-levels', { title: 'sponsors'});
 });
 
+//Needs info updated
 app.get('/sponsors/letter', function (req, res) {
     res.render('sponsor-letter', { title: 'sponsors'});
 });
@@ -93,6 +98,7 @@ app.get('/schedule', function (req, res) {
     res.render('schedule', { title: 'schedule' });
 });
 
+/*
 app.get('/schedule/reid', function (req, res) {
     res.render('reid', { title: 'speaker: reid' });
 });
@@ -108,6 +114,7 @@ app.get('/schedule/skyler', function (req, res) {
 app.get('/schedule/ellen', function (req, res) {
     res.render('ellen', { title: 'speaker: ellen' });
 });
+*/
 
 app.get('/live', function (req, res) {
     res.render('live', { title: 'live' });
