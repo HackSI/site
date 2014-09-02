@@ -3,8 +3,6 @@ var vows = require('vows'),
     request = require('request'),
     app = require('../app.js');
 
-    //app.listen(8900);
-
 var fetch = function(p, cb) {
     var url = 'http://127.0.0.1:8900' + p;
     request(url, cb);

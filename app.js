@@ -138,3 +138,5 @@ app.listen(port, function() {
     console.log('Launched server at', new Date());
     console.log('Server listening: http://127.0.0.1:' + port);
 });
+
+module.exports = app;
