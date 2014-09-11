@@ -6,7 +6,7 @@ var express = require('express'),
 general(app);
 
 app.get('/register', function (req, res) {
-    res.redirect('http://hacksi.eventbrite.com/');
+    res.redirect('http://hacksi2015.eventbrite.com/');
 });
 
 app.get('/twitter', function (req, res) {
