@@ -8,3 +8,5 @@ deploy:
   app: hacksi
   on:
     repo: HackSI/site
+notifications:
+  slack: hacksi:4lnHm1RjO4yfojtzgjWXMxeZ
