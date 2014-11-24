@@ -26,7 +26,7 @@
   "scripts": {
     "start": "node ./app.js",
     "pretest": "jshint --config ./node_modules/yui-lint/jshint.json ./app.js ./tests/",
-    "test": "istanbul cover --print both vows -- --spec ./tests/*.js"
+    "test": "vows -- --spec ./tests/*.js"
   },
   "licenses": [
     {
