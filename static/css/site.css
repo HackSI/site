@@ -192,6 +192,17 @@ a:hover {
     text-align: center;
 }
 
+.pricing-tables .l-box {
+  text-align: justify;
+}
+
+.pricing-tables .l-box {
+  text-align: justify;
+}
+
+h1.title {
+  text-align: center
+}
 /*
  * -- PRICING TABLE  --
  * Every pricing table has the .pricing-table class
