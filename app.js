@@ -98,23 +98,13 @@ app.get('/schedule', function (req, res) {
     res.render('schedule', { title: 'schedule' });
 });
 
-/*
-app.get('/schedule/reid', function (req, res) {
-    res.render('reid', { title: 'speaker: reid' });
+app.get('/schedule/schneider', function (req, res) {
+    res.render('schneider', { title: 'speaker: schneider' });
 });
 
-app.get('/schedule/steve', function (req, res) {
-    res.render('steve', { title: 'speaker: steve' });
+app.get('/schedule/packer', function (req, res) {
+    res.render('packer', { title: 'speaker: packer' });
 });
-
-app.get('/schedule/skyler', function (req, res) {
-    res.render('skyler', { title: 'speaker: skyler' });
-});
-
-app.get('/schedule/ellen', function (req, res) {
-    res.render('ellen', { title: 'speaker: ellen' });
-});
-*/
 
 app.get('/live', function (req, res) {
     res.render('live', { title: 'live' });
