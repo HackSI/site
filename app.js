@@ -106,6 +106,10 @@ app.get('/schedule/packer', function (req, res) {
     res.render('packer', { title: 'speaker: packer' });
 });
 
+app.get('/schedule/bowen', function (req, res) {
+    res.render('bowen', { title: 'speaker: bowen' });
+});
+
 app.get('/live', function (req, res) {
     res.render('live', { title: 'live' });
 });
