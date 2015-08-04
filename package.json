@@ -8,6 +8,7 @@
     "node": "0.10.x"
   },
   "dependencies": {
+    "handlebars": "~3.0.3",
     "hapi": "~8.8.0"
   },
   "devDependencies": {
