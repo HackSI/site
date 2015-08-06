@@ -12,15 +12,6 @@ var tests = {
     'is loaded': {
         topic: function() {
             return app;
-        },
-        'is an express app': function(topic) {
-            assert.ok(topic);
-            assert.isFunction(app);
-            assert.isFunction(app.use);
-            assert.isFunction(app.get);
-        },
-        'handlebars is loaded': function(topic) {
-            assert.isFunction(topic.engines['.handlebars']);
         }
     },
     'should make requests': {
@@ -33,6 +24,7 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
+                    assert.equal(topic.req.path, '/');
                     assert.equal(topic.statusCode, 200);
                 }
             },
@@ -44,6 +36,7 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
+                    assert.equal(topic.req.path, '/about');
                     assert.equal(topic.statusCode, 200);
                 }
             },
@@ -66,6 +59,7 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
+                    assert.equal(topic.request.uri.href, 'https://twitter.com/hacksi');
                     assert.equal(topic.statusCode, 200);
                 }
             },
@@ -77,6 +71,7 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
+                    assert.equal(topic.request.uri.href, 'https://github.com/HackSI');
                     assert.equal(topic.statusCode, 200);
                 }
             },
@@ -99,6 +94,7 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
+                    assert.equal(topic.request.uri.href, 'https://plus.google.com/communities/108109882393061170322');
                     assert.equal(topic.statusCode, 200);
                 }
             },
@@ -110,6 +106,7 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
+                    assert.equal(topic.request.uri.href, 'https://www.flickr.com/groups/hacksi/');
                     assert.equal(topic.statusCode, 200);
                 }
             },
@@ -121,6 +118,7 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
+                    assert.equal(topic.req.path, '/sponsors');
                     assert.equal(topic.statusCode, 200);
                 }
             },
@@ -132,6 +130,7 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
+                    assert.equal(topic.req.path, '/sponsors/levels');
                     assert.equal(topic.statusCode, 200);
                 }
             },
@@ -143,6 +142,7 @@ var tests = {
                     });
                 },
                 'answer with 200': function(topic) {
+                    assert.equal(topic.req.path, '/sponsors/letter');
                     assert.equal(topic.statusCode, 200);
                 }
             },
@@ -154,6 +154,7 @@ var tests = {
                     });
                 },
                 'answer with 200': function(topic) {
+                    assert.equal(topic.req.path, '/sponsors/letter/print');
                     assert.equal(topic.statusCode, 200);
                 }
             },
@@ -165,6 +166,7 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
+                    assert.equal(topic.req.path, '/contact');
                     assert.equal(topic.statusCode, 200);
                 }
             },
@@ -176,6 +178,7 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
+                    assert.equal(topic.req.path, '/schedule');
                     assert.equal(topic.statusCode, 200);
                 }
             },
@@ -187,6 +190,7 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
+                    assert.equal(topic.req.path, '/live');
                     assert.equal(topic.statusCode, 200);
                 }
             },
@@ -198,6 +202,7 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
+                    assert.equal(topic.req.path, '/code');
                     assert.equal(topic.statusCode, 200);
                 }
             },
@@ -209,6 +214,7 @@ var tests = {
                     });
                 },
                 'answer with a 200': function(topic) {
+                    assert.equal(topic.req.path, '/press');
                     assert.equal(topic.statusCode, 200);
                 }
             }
