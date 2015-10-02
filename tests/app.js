@@ -86,6 +86,7 @@ var tests = {
                     assert.equal(topic.statusCode, 200);
                 }
             },
+            /*
             '/google': {
                 topic: function() {
                     var self = this;
@@ -98,6 +99,7 @@ var tests = {
                     assert.equal(topic.statusCode, 200);
                 }
             },
+            */
             '/flickr': {
                 topic: function() {
                     var self = this;
