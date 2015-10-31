@@ -15,7 +15,7 @@ h2, h3 {
 }
 
 .nav-collapse {
-	background: #02172A;}
+	background: #4d766e;}
 
 .nav-collapse a:hover {
 	text-decoration:none;}
@@ -303,7 +303,7 @@ h1.title {
 
 .footer {
     padding: 0.5em 2em 0.5em;
-    background: #062440;
+    background: #4d766e;
     color: #888;
 }
     .footer a {
@@ -399,7 +399,7 @@ hr{
 }
 
 .pure-button {
-    background-color: #d53a3a;
+    background-color: #764d55;
 }
 
 .footer .pure-g,
