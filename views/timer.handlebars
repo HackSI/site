@@ -1,0 +1,71 @@
+<h1></h1>
+
+<style>
+body {
+    background-color: #4d766e;
+    color: white;
+    font-family: Helvetica;
+}
+
+body.over {
+    background-color: #d53a3a;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20em;
+    text-shadow: 4px 4px 2px #000;
+}
+
+.over h1 {
+    text-shadow: 4px 4px 2px #000;
+}
+</style>
+
+<script>
+(function() {
+    var h1 = document.getElementsByTagName('h1')[0],
+        body = document.body,
+        duration = {{duration}},
+        timer, format, pad;
+
+    pad = function(i) {
+        if (i < 10) {
+            i = '0' + i;
+        }
+        return i;
+    };
+
+    format = function(d) {
+        var str = d, min, sec;
+        if (str < 60) {
+            str = '0:' + pad(d);
+        } else {
+            min = Math.floor(d / 60);
+            sec = (d - (min * 60));
+            str = min + ':' + pad(sec);
+        }
+        return str;
+    };
+
+    var runner = function(a) {
+        if (a === undefined) {
+            --duration
+        }
+        if (duration === 0) {
+            clearTimeout(timer);
+            h1.innerHTML = 'Done!';
+            return;
+        }
+        if (duration <= 30 && body.className === '') {
+            body.className = 'over';
+        }
+        h1.innerHTML = format(duration);
+    };
+
+    timer = setInterval(runner, 1000);
+
+    runner(true);
+}());
+
+</script>
