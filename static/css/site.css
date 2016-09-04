@@ -394,12 +394,22 @@ hr{
 
 .sponsors img{
 	text-align:center;
-	margin:5px 10px;
-	height:75px;
+	margin: 5px 10px;
+	height: 75px;
+}
+
+.color-alpha {
+    background-color: #000;
 }
 
 .pure-button {
     background-color: #972b40;
+    color: white;
+}
+
+.button-xsmall {
+    font-size: 70%;
+    border-radius: 5px;
 }
 
 .footer .pure-g,
