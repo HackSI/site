@@ -404,6 +404,12 @@ hr{
 
 .pure-button {
     background-color: #972b40;
+    color: white;
+}
+
+.button-xsmall {
+    font-size: 70%;
+    border-radius: 5px;
 }
 
 .footer .pure-g,
