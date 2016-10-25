@@ -1,0 +1,16 @@
+version: '2'
+services:
+    app:
+        build: .
+        environment: 
+            - MONGOLAB_URI=mongodb://mongodb/hacksi
+        ports:
+            - "3000:3000"
+        depends_on:
+            - mongodb
+    mongodb:
+        environment:
+            - AUTH=no
+        image: tutum/mongodb:3.2
+        ports:
+            - "27017:27017"

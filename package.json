@@ -5,11 +5,13 @@
   "author": "Dav Glass <davglass@gmail.com>",
   "version": "0.0.0",
   "engines": {
-    "node": "0.10.x"
+    "node": "6.x"
   },
   "dependencies": {
     "handlebars": "~3.0.3",
-    "hapi": "~8.8.0"
+    "hapi": "~8.8.0",
+    "joi": "^9.2.0",
+    "mongodb": "^2.2.11"
   },
   "devDependencies": {
     "grunt": "~0.4.0",
