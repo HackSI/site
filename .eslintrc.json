@@ -1,0 +1,24 @@
+{
+    "root": true,
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "script"
+    },
+    "rules": {
+        "semi": 2,
+        "no-console": 0,
+        "no-irregular-whitespace": 2,
+        "indent": ["error", 4],
+        "space-before-function-paren": ["error", "never"],
+        "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+        "arrow-body-style": [2, "always"],
+        "array-bracket-spacing": [2, "never"],
+        "object-curly-spacing": [2, "always"],
+        "key-spacing": ["error", { "beforeColon": false }]
+    },
+    "env": {
+        "node": true,
+        "browser": true
+    }
+}
