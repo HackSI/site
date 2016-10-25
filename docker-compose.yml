@@ -3,7 +3,7 @@ services:
     app:
         build: .
         environment: 
-            - MONGOLAB_URI=mongodb://mongodb/hacksi
+            - MONGODB_URI=mongodb://mongodb/hacksi
         ports:
             - "3000:3000"
         depends_on:
