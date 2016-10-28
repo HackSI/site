@@ -1,5 +1,6 @@
 node_modules
 coverage
+artifacts
 *.swp
 *.DS_STORE
 prep.sh

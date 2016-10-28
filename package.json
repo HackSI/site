@@ -18,20 +18,17 @@
     "grunt": "~0.4.0",
     "grunt-contrib-cssmin": "~0.6.2",
     "istanbul": "^0.4.5",
-    "request": "~2.27.0",
-    "vows": "0.8.0"
+    "jenkins-mocha": "^3.0.4",
+    "mockery": "^2.0.0",
+    "request": "~2.27.0"
   },
   "scripts": {
     "start": "node ./app.js",
     "pretest": "eslint --fix .",
-    "test": "istanbul cover --print both vows --spec ./tests/*.js"
+    "test": "jenkins-mocha ./tests/*.js",
+    "posttest": "istanbul check-coverage"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/hacksi/site/blob/master/LICENSE"
-    }
-  ],
+  "licenses": "MIT",
   "repository": {
     "type": "git",
     "url": "http://github.com/hacksi/site.git"
