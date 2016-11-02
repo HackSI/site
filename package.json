@@ -25,7 +25,7 @@
   "scripts": {
     "start": "node ./app.js",
     "pretest": "eslint --fix .",
-    "test": "jenkins-mocha ./tests/*.js",
+    "test": "jenkins-mocha ./tests/api.js ./tests/routes.js",
     "posttest": "istanbul check-coverage"
   },
   "licenses": "MIT",
