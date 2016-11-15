@@ -43,13 +43,13 @@
   user-select: none;
   position:absolute;
   z-index:100;
-  background: #4d766e url(../img/menu-icon.png) no-repeat center right;
+  background: #5a5a5a url(../img/menu-icon.png) no-repeat center right;
   font-size:1.25em;
   padding:10px 30px;
   right:0;
   border-radius: 0 0 10px 10px;
   width:85px;
-  color:#ccc;
+  color:#FFF;
   font-weight:bold;
 }
 
