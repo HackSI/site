@@ -8,8 +8,8 @@
     "node": "6.x"
   },
   "dependencies": {
-    "handlebars": "~3.0.3",
-    "hapi": "~8.8.0",
+    "handlebars": "~4.0.5",
+    "hapi": "~11.1.4",
     "joi": "^9.2.0",
     "mongodb": "^2.2.11"
   },
