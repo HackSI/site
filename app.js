@@ -6,8 +6,9 @@ const routes = require('./lib/routes');
 const server = new Hapi.Server();
 server.connection({ host: '0.0.0.0', port: parseInt(process.env.PORT, 10) || 8900 });
 
-server.register([require('vision'), require('inert')], (err) =>{
+server.register([require('vision'), require('inert')], (err) => {
 
+    /*istanbul ignore next*/
     if (err) {
         console.log(err);
     }
