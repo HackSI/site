@@ -3,7 +3,7 @@
  * Most of these are inherited from Base, but I want to change a few.
  */
 body {
-    background-color: #fff;
+    background-image: url("../img/big-bg.gif");
     color: #02172a;
 	font-family: 'open_sansregular';
 }
@@ -14,8 +14,10 @@ h2, h3 {
     font-weight: 600;
 }
 
-.nav-collapse {
-  background: #5a5a5a;
+
+
+.content {
+    background-color: white;
 }
 
 .nav-collapse a:hover {
@@ -103,17 +105,27 @@ a:hover {
  * of `display: table;` and `display: table-cell;`, we can
  * vertically center the text.
  */
+.header {
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 35vh;
+    position: absolute;
+    z-index: 1;
+    clip-path: polygon(
+        0 0,
+        0 50%,
+        35% 100%,
+        100% 10%,
+        100% 0
+    );
+}
+
 .banner {
     height: 442px;
     width: 100%;
     margin-bottom: 3em;
     display: table;
     color: white;
-	background: url(../img/header.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 }
 
 .banner-head {
@@ -123,6 +135,20 @@ a:hover {
     margin: auto auto;
     margin-top: 5.5em;
     position: relative;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    clip-path: polygon(
+        0 0,
+        0 65%,
+        35% 90%,
+        100% 65%,
+        100% 0
+    );
+    z-index: -1;
 }
 
 #countdown {
@@ -540,6 +566,10 @@ hr{
  * -- LARGE PHONES AND TABLET MEDIA QUERIES --
  */
 @media(max-width: 899px) {
+
+    .header {
+        height: 10vh;
+    }
 	
     .banner-head {
 		max-width:90%;
