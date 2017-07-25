@@ -133,19 +133,32 @@ a:hover {
     vertical-align: middle;
     margin-bottom: 0;
     margin: auto auto;
-    margin-top: 5.5em;
+    margin-top: 2em;
     position: relative;
+    z-index: 2;
+}
+
+.banner-head img {
+    fill: white;
+}
+
+.banner-svg {
+    position: absolute;
+    width: 101%;
+    height: auto;
+    margin-left: -1px
 }
 
 .banner-img {
     width: 100%;
     height: auto;
+    margin-top: 1px;
     position: absolute;
     clip-path: polygon(
         0 0,
-        0 65%,
+        0 70%,
         35% 90%,
-        100% 65%,
+        100% 55%,
         100% 0
     );
     z-index: -1;
@@ -163,21 +176,29 @@ a:hover {
 }
 
 .banner-head h1 {
-    font-size: 3.5em;
 	font-size:72px;
     font-weight: 500;
     text-shadow: 0 1px 1px black;
 	line-height:1;
 	text-align:center;
-	text-align:left;
 	text-transform:uppercase;
-	margin:.4em 0 .2em 0;
+	margin:0 0 .2em 2em;
+}
+
+.banner-head h2 {
+	font-size:42px;
+    font-weight: 500;
+    text-shadow: 0 1px 1px black;
+	line-height:1;
+	text-align:center;
+	text-transform:uppercase;
+	margin:.4em 1em 0 0;
 }
 
 .banner-head .date-loc {
-	background: url(../img/locPointer.png) no-repeat left center;
-	padding: 0 0 5px 40px;
-	margin-right:-40px;}
+	background-color: black;
+	padding: 0 0 5px 10px;
+    margin: 10px 10px 0 0;}
 
 .banner-head .date {
 	font-family: 'open_sansbold';
@@ -191,10 +212,9 @@ a:hover {
 	color: #d53a3a;}
 	
 .banner-head .pure-button {
+    float: right;
 	font-weight:bold;
-	padding:14px 110px;
-	margin:5px 0;
-	border-radius:5px;}
+	padding:20px 40px;}
 	
 .banner-head .registerPointer{
 	background: url("../img/registerPointer.png") no-repeat scroll right center transparent;
@@ -204,6 +224,11 @@ a:hover {
     position: absolute;
     top: 0;
     width: 970px;}
+
+.logo {
+    float: right;
+    margin-bottom: 10px;
+}
 
 /*
  * -- PRICING TABLE WRAPPER --
@@ -434,7 +459,7 @@ hr{
 }
 
 .pure-button {
-    background-color: #010101;
+    background-color: #d23b3f;
     color: white;
 }
 
