@@ -6,7 +6,7 @@
         },
         {
             "title": "<h3><a href=\"http://www.wsiltv.com/story/33643522/hack-si-event-wraps-up-in-carbondale\">WSIL | HackSI event wraps up in Carbondale</a></h3>",
-            "content": "<p>Nov 6, 2016 ... Dozens of technology enthusiasts spent the weekend experimenting with drones and robots at Southern Illinois University.</p><p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/IwYGAy_9a8U\" frameborder=\"0\" allowfullscreen></iframe></p>"
+            "content": "<p>Nov 6, 2016 ... Dozens of technology enthusiasts spent the weekend experimenting with drones and robots at Southern Illinois University.</p><div class=\"content-video\"><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/IwYGAy_9a8U\" frameborder=\"0\" allowfullscreen></iframe></div>"
         },
         {
             "title": "<h3><a href=\"http://chicagoinno.streetwise.co/2016/11/03/yahoo-engineer-behind-southern-illinois-tech-hackathon-hacksi/\">ChicagoInno | A Yahoo Engineer Is Building a Hacker Community in Southern Illinois</a></h3>",
@@ -14,23 +14,23 @@
         },
         {
             "title": "<h3><a href=\"http://www.wsiltv.com/story/33495761/hacksi-returns-to-carbondale\">WSIL | HackSI Returns to Carbondale</a></h3>",
-            "content": "<p>Oct 27, 2016 ... Once again HackSI returns to Carbondale. It's an event to encourage people of all ages to take two things that don't normally work together and \"hack\" them into a useful item.</p><p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/sjS8jM8Lfac\" frameborder=\"0\" allowfullscreen></iframe></p>"
+            "content": "<p>Oct 27, 2016 ... Once again HackSI returns to Carbondale. It's an event to encourage people of all ages to take two things that don't normally work together and \"hack\" them into a useful item.</p><div class=\"content-video\"><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/sjS8jM8Lfac\" frameborder=\"0\" allowfullscreen></iframe></div>"
         },
         {
             "title": "<h3><a href=\"http://www.kfvs12.com/\">KFVS | Third Annual Event Coverage</a></h3>",
-            "content": "<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/H6RV5YJx6f8\" frameborder=\"0\" allowfullscreen></iframe></p>"
+            "content": "<div class=\"content-video\"><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/H6RV5YJx6f8\" frameborder=\"0\" allowfullscreen></iframe></div>"
         },
         {
             "title": "<h3><a href=\"http://www.wsiltv.com/\">WSIL | Third Annual Event Coverage</a></h3>",
-            "content": "<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/FZn2i11qgyo\" frameborder=\"0\" allowfullscreen></iframe></p>"
+            "content": "<div class=\"content-video\"><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/FZn2i11qgyo\" frameborder=\"0\" allowfullscreen></iframe></div>"
         },
         {
             "title": "<h3><a href=\"http://www.wsiltv.com/\">WSIL | Third Annual Media Coverage</a></h3>",
-            "content": "<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/qRzAxFEiFvc\" frameborder=\"0\" allowfullscreen></iframe></p>"
+            "content": "<div class=\"content-video\"><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/qRzAxFEiFvc\" frameborder=\"0\" allowfullscreen></iframe></div>"
         },
         {
             "title": "<h3><a href=\"http://www.wsiltv.com/\">WSIL | Second Annual Media Coverage</a></h3>",
-            "content": "<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/e5-MUYSsvVY\" frameborder=\"0\" allowfullscreen></iframe></p>"
+            "content": "<div class=\"content-video\"><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/e5-MUYSsvVY\" frameborder=\"0\" allowfullscreen></iframe></div>"
         },
         {
             "title": "<h3><a href=\"http://www.kfvs12.com/story/27988639/hundreds-expected-to-attend-southern-il-hackathon\">KFVS | 48-Hour 'Hackathon' kicks off in Carbondale</a></h3>",
