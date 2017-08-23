@@ -1,7 +1,7 @@
 {
   "name": "site",
   "private": true,
-  "description": "The hacksi.me website",
+  "description": "The HackSI website",
   "author": "Dav Glass <davglass@gmail.com>",
   "version": "0.0.0",
   "engines": {
@@ -12,16 +12,16 @@
     "hapi": "~16.1.1",
     "inert": "^4.2.0",
     "joi": "^10.4.1",
-    "mongodb": "^2.2.11",
+    "mongodb": "^2.2.31",
     "vision": "^4.1.1"
   },
   "devDependencies": {
-    "eslint": "^3.8.1",
+    "eslint": "^3.19.0",
     "grunt": "~0.4.0",
     "grunt-contrib-cssmin": "~0.6.2",
     "istanbul": "^0.4.5",
     "jenkins-mocha": "^3.0.4",
-    "mockery": "^2.0.0",
+    "mockery": "^2.1.0",
     "request": "~2.27.0"
   },
   "scripts": {

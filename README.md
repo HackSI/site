@@ -1,7 +1,7 @@
-The HackSI.me website
+The HackSI website
 =====================
 
-The hacksi.me website
+The HackSI website
 
 Development
 -----------

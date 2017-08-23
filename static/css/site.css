@@ -61,6 +61,11 @@ h2, h3 {
     float: left;
 }
 
+.content .paypal-form {
+    padding: 2em;
+    text-align: center;
+}
+
 .nav-collapse a:hover {
 	text-decoration:none;}
 
@@ -225,7 +230,8 @@ a:hover {
 .banner-head .date-loc {
 	background-color: black;
 	padding: 0 0 5px 10px;
-    margin: 10px 10px 0 0;}
+    margin: 10px 10px 0 0;
+    box-shadow: -5px 5px 5px #ddd;}
 
 .banner-head .date {
 	font-family: 'open_sansbold';
@@ -254,8 +260,9 @@ a:hover {
 
 .logo {
     float: right;
-    padding-top: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
+    box-shadow: 10px 5px 5px #333;
 }
 
 /*
