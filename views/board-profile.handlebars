@@ -1,0 +1,16 @@
+
+
+<div class="board">
+    {{#with member}}
+    <img src="/static/img/board/{{id}}.jpg" align="right">
+    <h2>{{name}}</h2>
+    {{title}}<br>
+    {{org}}<br>
+    <a href="https://twitter.com/{{twitter}}" class="social-icon-twitter" title="@{{twitter}} profile"><span>@{{twitter}}</span></a>
+    {{/with}}
+    <hr>
+    <p></p>
+    {{{bio}}}
+</div>
+
+<p><a href="/board"><small>[Return to Board]</small></a></p>

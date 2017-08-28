@@ -79,7 +79,23 @@ blockquote p {
 }
 
 .nav-collapse a:hover {
-	text-decoration:none;}
+	text-decoration:none;
+}
+
+.board img {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.board a {
+    text-decoration: bold;
+}
+
+.board a span {
+    text-decoration: none;
+	font-family: 'open_sansregular';
+}
+
 
 @media screen and (min-width: 799px) {	
 	.nav-collapse.closed ul {
