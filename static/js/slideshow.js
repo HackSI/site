@@ -1,17 +1,25 @@
-var slideIndex = 0;
-slideShow();
-
-function slideShow() {
-    var x = document.getElementsByClassName("banner-img");
-    for (var i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+(function() {
+    
+    if (!('classList' in document.body)) {
+        return; //old browser, don't care..
     }
 
-    slideIndex++;
-    if (slideIndex > x.length) {
-        slideIndex = 1;
-    }
+    var slideIndex = 0;
 
-    x[slideIndex-1].style.display = "block";
-    setTimeout(slideShow, 10000);
-}
+    var slideShow = function() {
+        var x = document.querySelectorAll('.banner-img');
+        for (var i = 0; i < x.length; i++) {
+            x[i].classList.remove("show")
+        }
+
+        slideIndex++;
+        if (slideIndex > x.length) {
+            slideIndex = 1;
+        }
+
+        x[slideIndex-1].classList.add('show');
+    };
+    
+    
+    setInterval(slideShow, 8 * 1000);
+}());
