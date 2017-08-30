@@ -14,6 +14,18 @@ h2, h3 {
     font-weight: 600;
 }
 
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+blockquote p {
+  display: inline;
+  font-style: italic;
+}
+
 .content {
     background-color: white;
     padding: 20px;
@@ -67,7 +79,23 @@ h2, h3 {
 }
 
 .nav-collapse a:hover {
-	text-decoration:none;}
+	text-decoration:none;
+}
+
+.board img {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.board a {
+    text-decoration: bold;
+}
+
+.board a span {
+    text-decoration: none;
+	font-family: 'open_sansregular';
+}
+
 
 @media screen and (min-width: 799px) {	
 	.nav-collapse.closed ul {
@@ -182,6 +210,7 @@ a:hover {
 }
 
 .banner-img {
+    opacity: 0;
     width: 100%;
     height: auto;
     margin-top: 1px;
@@ -194,6 +223,11 @@ a:hover {
         100% 0
     );
     z-index: -1;
+}
+
+.banner img.show {
+    opacity: 1;
+    transition: all 1s ease-out;
 }
 
 #countdown {

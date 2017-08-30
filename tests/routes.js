@@ -25,6 +25,19 @@ describe('main routes', () => {
             });
         }
     });
+    
+    const members = Object.keys(require('../lib/board.json'));
+    members.push('foo', 'davglass'); //catches 404 redirect and cache hit..
+    members.forEach((name) => {
+        const path = `/board/${name}`;
+        it(`should render ${path}`, function(done) {
+            this.timeout(15000); //For external requests..
+            fetch(path, function(err, res) {
+                assert.equal(res.statusCode, 200);
+                done();
+            });
+        });
+    });
 
     it('should show home page on unknown route', (done) => {
         fetch('/does/not/exist', function(err, res) {
