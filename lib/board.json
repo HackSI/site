@@ -1,19 +1,19 @@
 {
     "davglass": {
         "name": "Dav Glass",
-        "title": "Board Member, Founder",
+        "title": "Board Chairman, Founder",
         "org": "Distinguished Architect, Oath Inc, a Verizon Company",
         "twitter": "davglass"
     },
     "jacob": {
         "name": "Jacob Morton",
-        "title": "Board Member, Founder",
+        "title": "Board Vice-Chairman, Founder",
         "org": "Integration Analyst, Liaison Technologies",
         "twitter": "mkoopajr"
     },
     "bonnie": {
         "name": "Bonnie Kucharski",
-        "title": "Board Member",
+        "title": "Board Treasurer",
         "org": "Sr. Director, Managed Services, Liaison Technologies",
         "twitter": "LiaisonTech"
     },
@@ -25,7 +25,7 @@
     },
     "lynn": {
         "name": "Lynn Andersen Lindberg",
-        "title": "Board Member",
+        "title": "Board Secretary",
         "org": "Director, Business Innovation and Research, SIU Research Park",
         "twitter": "SIUSBDC"
     }
