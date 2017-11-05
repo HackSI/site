@@ -15,7 +15,7 @@ describe('main routes', () => {
 
     const routes = require('../lib/routes');
     routes.forEach((route) => {
-        if (route.method === 'GET' && !route.path.includes('{')) {
+        if (route.method === 'GET' && !route.path.includes('{') && route.path != '/present') {
             it(`should render ${route.path}`, function(done) {
                 this.timeout(15000); //For external requests..
                 fetch(route.path, function(err, res) {
