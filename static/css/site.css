@@ -116,7 +116,7 @@ blockquote p {
 		color:#fff;}
 
 	.nav-collapse.closed li a:hover{
-		color:#d53a3a;}
+		color:#00a14b;}
 }	
 
 p {
@@ -125,7 +125,7 @@ p {
 }
 
 a {
-    color: #d53a3a;
+    color: #00a14b;
     text-decoration: none;
 }
 
@@ -276,7 +276,7 @@ a:hover {
 	font-size: .85em;}
 	
 .banner-head a.location:hover {
-	color: #d53a3a;}
+	color: #00a14b;}
 	
 .banner-head .pure-button {
     float: right;
@@ -342,7 +342,7 @@ h1.title {
 }
 
 .pricing-table-biz .pricing-table-header {
-    background: #d53a3a url(../img/build.png) no-repeat top left;
+    background: #00a14b url(../img/build.png) no-repeat top left;
 	padding:0 0 20px;	
 }
 
@@ -528,7 +528,7 @@ hr{
 }
 
 .pure-button {
-    background-color: #d23b3f;
+    background-color: #00a14b;
     color: white;
 }
 
@@ -551,7 +551,7 @@ hr{
     text-decoration: none;
 }
 .social a:hover: {
-    color: #d53a3a;
+    color: #00a14b;
 }
 .social a span {
     position: absolute;
