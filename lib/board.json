@@ -2,20 +2,19 @@
     "davglass": {
         "name": "Dav Glass",
         "title": "Chair, Founder",
-        "org": "Distinguished Architect, Oath Inc, a Verizon Company",
+        "org": "Distinguished Architect, Verizon",
         "twitter": "davglass"
     },
     "jacob": {
         "name": "Jacob Morton",
         "title": "Vice-Chair, Founder",
-        "org": "Integration Analyst, Liaison Technologies",
+        "org": "Integration Analyst, OpenText",
         "twitter": "mkoopajr"
     },
     "bonnie": {
         "name": "Bonnie Kucharski",
         "title": "Treasurer",
-        "org": "Sr. Director, Managed Services, Liaison Technologies",
-        "twitter": "LiaisonTech"
+        "org": "VP, Operations, Potentia Analytics"
     },
     "kyle": {
         "name": "Dr. Kyle L. Harfst",

@@ -24,7 +24,9 @@
                     <a href="/board/{{id}}" title="View {{name}}'s Bio">{{name}}</a><br>
                     {{title}}<br>
                     {{org}}<br>
-                    <a href="https://twitter.com/{{twitter}}" class="social-icon-twitter" title="@{{twitter}} profile"><span>@{{twitter}}</span></a>
+                        {{#if twitter}}
+                        <a href="https://twitter.com/{{twitter}}" class="social-icon-twitter" title="@{{twitter}} profile"><span>@{{twitter}}</span></a>
+                        {{/if}}
                     {{/if}}
                     </p>
                 </div>
