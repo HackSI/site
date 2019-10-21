@@ -5,7 +5,7 @@ node_js:
 deploy:
   provider: heroku
   api_key:
-    secure: Z9/9ChwFmQZp1b/os9rtENq5dTq1kO+mja6/h/purGhTS391h3zT40xfTR/MizGDk76HelOBshAdi98jhyMA5ooIBX2823v7rN8K5h2lQ4w/XNrTYp3PpGIwPT7jcDlTiDdIZFzNFwAXbkStxjFx3nhvgsU9bBkFVRyNzBPNYas=
+    secure: qMtEbt1DvGYWOGvjtTdxBnlNAOW6D0DWhoLqUqmKeViXsfNaTzJN3YZltp+YiI41flJsV/X9jrAuwFhXnBOBsrTooJhUepPe57X656VfompyG61i+sFL63OIq/qv6pner4qnxFd7WyFF2S14jxVBRxaQfKgnvhPbMK4YBU8Vyic=
   app: hacksi
   on:
     repo: HackSI/site
