@@ -22,7 +22,7 @@
     "istanbul": "^0.4.5",
     "jenkins-mocha": "^3.0.4",
     "mockery": "^2.1.0",
-    "request": "~2.27.0"
+    "request": "~2.88.0"
   },
   "scripts": {
     "start": "node ./app.js",
