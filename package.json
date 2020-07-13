@@ -16,7 +16,7 @@
     "vision": "^4.1.1"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
+    "eslint": "^6.6.0",
     "grunt": "~0.4.0",
     "grunt-contrib-cssmin": "~0.6.2",
     "istanbul": "^0.4.5",
