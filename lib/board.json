@@ -2,19 +2,14 @@
     "davglass": {
         "name": "Dav Glass",
         "title": "Chair, Founder",
-        "org": "Principal Engineer, MedicAlert Foundation",
+        "org": "cto, CLEANTheory",
         "twitter": "davglass"
     },
     "jacob": {
         "name": "Jacob Morton",
         "title": "Vice-Chair, Founder",
-        "org": "Engineer, MedicAlert Foundation",
+        "org": "Senior Engineer, MedicAlert Foundation",
         "twitter": "mkoopajr"
-    },
-    "bonnie": {
-        "name": "Bonnie Kucharski",
-        "title": "Treasurer",
-        "org": "Community Business Leader"
     },
     "lynn": {
         "name": "Lynn Andersen Lindberg",
@@ -25,7 +20,7 @@
     "andrew": {
         "name": "Andrew Wilson",
         "title": "Director",
-        "org": "Assistant State's Attorney in Williamson County",
+        "org": "Attorney at Law / Partner at Hunn Law Group",
         "twitter": "wilsonian8"
     }
 }
