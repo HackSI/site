@@ -13,10 +13,7 @@ const Handlebars = require('handlebars');
 
 const { engine } = require('express-handlebars');
 app.engine('handlebars', engine({
-    helpers: { 
-        json: function(context) { /*istanbul ignore next*/
-            return JSON.stringify(context, null, 4);
-        },
+    helpers: {
         addCSS: (file) => { //Needs expanded to do combo files in the future
             const html = `<link rel="stylesheet" href="/static${file}">`;
             return new Handlebars.SafeString(html);
