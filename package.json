@@ -5,30 +5,39 @@
   "author": "Dav Glass <davglass@gmail.com>",
   "version": "0.0.0",
   "engines": {
-    "node": "6.x"
+    "node": "18.x"
   },
   "dependencies": {
-    "handlebars": "~4.0.5",
-    "hapi": "~16.1.1",
-    "inert": "^4.2.0",
-    "joi": "^10.4.1",
-    "mongodb": "^2.2.31",
-    "vision": "^4.1.1"
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "handlebars": "~4.0.5"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
-    "grunt": "~0.4.0",
-    "grunt-contrib-cssmin": "~0.6.2",
-    "istanbul": "^0.4.5",
-    "jenkins-mocha": "^3.0.4",
-    "mockery": "^2.1.0",
-    "request": "~2.27.0"
+    "eslint": "^8.49.0",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "request": "^2.88.2"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "reporter": [
+      "lcov",
+      "text",
+      "text-summary",
+      "html"
+    ],
+    "report-dir": "./artifacts/coverage/",
+    "statements": 100,
+    "branches": 100,
+    "functions": 100,
+    "lines": 100
   },
   "scripts": {
     "start": "node ./app.js",
-    "pretest": "eslint --fix .",
-    "test": "jenkins-mocha ./tests/api.js ./tests/routes.js",
-    "posttest": "istanbul check-coverage"
+    "format": "eslint --fix .",
+    "pretest": "npm run format",
+    "test": "nyc mocha ./tests/routes.js"
   },
   "licenses": "MIT",
   "repository": {
