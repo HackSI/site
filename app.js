@@ -1,37 +1,59 @@
-'use strict';
+#!/usr/bin/env node
 
-const Hapi = require('hapi');
+
 const routes = require('./lib/routes');
 
-const server = new Hapi.Server();
-server.connection({ host: '0.0.0.0', port: parseInt(process.env.PORT, 10) || 8900 });
+const PORT = parseInt(process.env.PORT, 10) || 8900;
 
-server.register([require('vision'), require('inert')], (err) => {
+const bodyParser = require('body-parser');
+const express = require('express');
+const app = express();
 
-    /*istanbul ignore next*/
-    if (err) {
-        console.log(err);
-    }
+const Handlebars = require('handlebars');
 
-    server.views({
-        path: './views',
-        layoutPath: './views/layouts',
-        layout: 'main',
-        partialsPath: './views/partials',
-        helpersPath: './lib',
-        engines: {
-            handlebars: require('handlebars')
+const { engine } = require('express-handlebars');
+app.engine('handlebars', engine({
+    helpers: { 
+        json: function(context) { /*istanbul ignore next*/
+            return JSON.stringify(context, null, 4);
+        },
+        addCSS: (file) => { //Needs expanded to do combo files in the future
+            const html = `<link rel="stylesheet" href="/static${file}">`;
+            return new Handlebars.SafeString(html);
         }
-    });
+    }
+}));
+app.set('view engine', 'handlebars');
+app.set('views', './views');
 
-    server.route(routes);
+app.use('/static', express.static('static'));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+// Hacks to make express compatible from Hapi definitions
+app.use((req, res, next) => {
+    res.view = (template, locals, layout) => {
+        res.locals = locals;
+        res.render(template, layout);
+    };
+    res.file = (filename) => {
+        const path = require('path');
+        res.download(filename, path.basename(filename));
+    };
+    next();
 });
 
-
-server.start(() => {
-    console.log(`Launched server at  ${new Date()}`);
-    console.log(`Server listening: ${server.info.uri}`);
-    console.log(`Working env is: ${process.env.NODE_ENV}`);
+// Hacks to make express compatible from Hapi definitions
+routes.forEach(r => {
+    const method = r.method.toLowerCase();
+    const path = r.path.replace('}', '').replace('{', ':');
+    app[method](path, r.handler);
 });
 
-module.exports = server;
+// Send all 404's home
+app.use((req, res) => {
+    res.redirect('/');
+});
+
+module.exports.server = app.listen(PORT);
+module.exports.app = app;
