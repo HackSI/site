@@ -3,7 +3,7 @@ name: HackSI Site PR Build
 on:
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   build:
