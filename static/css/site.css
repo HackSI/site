@@ -523,6 +523,10 @@ hr{
 	height: 75px;
 }
 
+.sponsors .large img {
+	height: 125px;
+}
+
 .color-alpha {
     background-color: #000;
 }
